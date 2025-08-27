@@ -1,52 +1,77 @@
-// import Navbar from "../components/nav";
 import Image from "next/image";
+
 export default function About() {
   return (
-    <div className="py-12">
-        {/* <Navbar></Navbar> */}
-        <div className="bg-white mb-8">
-          <div className=" flex flex-col space-y-2 items-center justify-center p-2">
-          <div className="w-[2px] h-18 bg-amber-600"></div>
-          <h2 className="text-amber-600 tracking-widest">ABOUT US</h2>
-          <h2 className="text-3xl font-bold">Serving Since 1945</h2>
-          </div>
-        <div></div>
+    <div className="py-8 bg-gradient-to-b from-white to-amber-50">
+      {/* Header */}
+      <div className="text-center mb-8">
+        <div className="flex flex-col items-center">
+          <div className="w-16 h-1 bg-amber-600 mb-3"></div>
+          <h2 className="text-amber-600 tracking-widest font-medium">
+            TENTANG KAMI
+          </h2>
+          <h1 className="text-xl md:text-3xl font-extrabold text-gray-900">
+            Hangatkan Harimu dengan Aroma Rempah
+          </h1>
         </div>
-        <div className="flex px-30 space-x-10">
-          <div className=" space-y-2 w-1/3">
-          <div>
-            <h2 className="text-2xl font-bold">Our Story</h2>
+      </div>
+
+      {/* Content */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 md:px-12">
+        {/* Image Gallery */}
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 relative">
+          {/* 4 Foto kecil */}
+          {["/jambengora.jpg", "/foto2.jpg", "/foto3.jpg", "/foto4.jpg"].map(
+            (src, i) => (
+              <div
+                key={i}
+                className="relative w-full h-52 md:h-60 rounded-xl overflow-hidden shadow-lg"
+              >
+                <Image src={src} alt={`Foto ${i + 1}`} fill className="object-cover" />
+              </div>
+            )
+          )}
+
+          {/* Foto ke-5 di tengah overlay */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 md:w-24 md:h-24 rounded-full bg-white flex items-center justify-center shadow-xl ring-4 ring-white">
+            <Image
+              src="/logo.png"
+              alt="Logo AREM"
+              width={120}
+              height={120}
+              className="object-contain"
+            />
           </div>
-          <div>
-            <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illum id molestias eos! Maiores voluptatem incidunt fugiat iste ipsam aperiam sed distinctio, ullam fugit. Consequatur quae ipsa nobis sit necessitatibus.</p>
-          </div>
-          <div>
-            <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi ratione fuga cumque ullam sit soluta officiis, veniam facilis quasi possimus quae doloribus praesentium, optio velit est! Minima, dolor nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat cupiditate optio, quisquam possimus aliquid assumenda dolor error dicta velit voluptate adipisci nemo impedit consectetur illo nihil modi id quasi.</p>
-          </div>
-          <div>
-            <button className="bg-black text-white py-1 px-4">Learn More</button>
-          </div>
-          
         </div>
-        <div className="w-1/3">
-          <Image src="/jambengora.jpg" height={400} width={200} alt="" className="bg-cover h-[100%] w-[100%]"/>
+
+        {/* Text */}
+        <div className="space-y-3">
+          <h2 className="text-3xl font-bold text-amber-900">Profil Perusahaan</h2>
+          <p className="text-gray-700 leading-relaxed text-justify">
+            AREM hadir untuk menghadirkan kembali kehangatan dan kekayaan rasa
+            minuman rempah tradisional khas Tasikmalaya. Filosofi dari nama
+            "Arem" sendiri ialah menciptakan minuman rempah yang tidak hanya
+            menyegarkan tubuh, tetapi juga menghangatkan jiwa. Kami percaya
+            bahwa minuman tradisional adalah warisan berharga yang harus terus
+            dilestarikan dan dinikmati oleh generasi modern.
+          </p>
+          <p className="text-gray-700 leading-relaxed text-justify">
+            Berawal dari sebuah resep turun-temurun, AREM menyajikan perpaduan
+            rempah-rempah pilihan terbaik, seperti jahe merah, kunyit, sereh,
+            kayu manis, dan cengkeh. Kami berkomitmen untuk menjaga kualitas dan
+            kesegaran setiap bahan, memastikan bahwa setiap botol AREM
+            mengandung manfaat optimal bagi kesehatan.
+          </p>
+          <p className="text-gray-700 leading-relaxed text-justify">
+            AREM bukan sekadar minuman, melainkan sebuah pengalaman. Kehangatan
+            jahe merah yang membakar semangat, aroma sereh yang menenangkan, dan
+            sentuhan manis alami dari gula aren akan membawa Anda pada sebuah
+            perjalanan rasa yang autentik. Kami menghadirkan AREM dalam jangkauan
+            yang lebih dekat, memudahkan Anda untuk menikmati kebaikan rempah di
+            mana saja dan kapan saja.
+          </p>
         </div>
-        <div className=" space-y-2 w-1/3">
-          <div>
-            <h2 className="text-2xl font-bold">Our Vision</h2>
-          </div>
-          <div>
-            <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est illum id molestias eos! Maiores voluptatem incidunt fugiat iste ipsam aperiam sed distinctio, ullam fugit. Consequatur quae ipsa nobis sit necessitatibus.</p>
-          </div>
-          <div>
-            <p className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi ratione fuga cumque ullam sit soluta officiis, veniam facilis quasi possimus quae doloribus praesentium, optio velit est! Minima, dolor nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat cupiditate optio, quisquam possimus aliquid assumenda dolor error dicta velit voluptate adipisci nemo impedit consectetur illo nihil modi id quasi.</p>
-          </div>
-          <div>
-            <button className="bg-black text-white py-1 px-4">Learn More</button>
-          </div>
-          
-        </div>
-        </div>
+      </div>
     </div>
   );
 }

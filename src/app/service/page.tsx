@@ -1,53 +1,71 @@
-// import Navbar from "../components/nav";
 import Image from "next/image";
+
 export default function Service() {
+const services = [
+  {
+    title: "Minuman Rempah Tradisional",
+    desc: "Beragam minuman rempah khas Indonesia seperti Wedang Jahe, STMJ, Saraba, dan Wedang Uwuh untuk kehangatan dan kesehatan.",
+    img: "/logo.jpg",
+  },
+  {
+    title: "Minuman Rempah Premium & Kreasi",
+    desc: "Minuman inovatif dengan perpaduan unik seperti Jambe + Telor, Koramilk, dan Teh Telur yang menyehatkan dan kaya rasa.",
+    img: "/logo.jpg",
+  },
+  {
+    title: "Paket & Bundling Minuman",
+    desc: "Paket minuman rempah siap saji untuk keluarga, kafe, atau hadiah spesial, memudahkan pelanggan menikmati berbagai varian sekaligus.",
+    img: "/logo.jpg",
+  },
+  {
+    title: "Workshop & Edukasi Rempah",
+    desc: "Belajar membuat minuman rempah sendiri, tips mengolah rempah agar tetap segar dan kaya manfaat, cocok untuk pemula maupun penggemar rempah.",
+    img: "/logo.jpg",
+  },
+];
+
+
   return (
-    <div className="py-12">
-        {/* <Navbar></Navbar> */}
-        <div className="bg-white mb-8">
-          <div className=" flex flex-col space-y-2 items-center justify-center p-2">
-          <div className="w-[2px] h-18 bg-amber-600"></div>
-          <h2 className="text-amber-600 tracking-widest">OUR SERVICE</h2>
-          <h2 className="text-3xl font-bold">Fresh & Organic Beans</h2>
-          </div>
-        <div></div>
+    <div className="py-8 bg-gradient-to-b from-amber-50 to-white">
+      {/* Header */}
+      <div className="text-center mb-12">
+        <div className="flex flex-col items-center">
+          <div className="w-16 h-1 bg-amber-600 mb-3"></div>
+          <h2 className="text-amber-600 tracking-widest font-medium">
+            OUR SERVICE
+          </h2>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+            Fresh & Organic Beans
+          </h1>
         </div>
-        <div className="flex px-30 space-x-10">
-          <div className="w-1/2 flex flex-col space-y-12">
-            <div className="flex space-x-3">
-              <Image src="/jambengora.jpg" width={100} height={100} alt="foto layanan"/>
-              <div className="flex flex-col">
-                <h3 className="text-xl font-bold">layanan 1 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id esse dolores obcaecati ipsam ut quo aliquid inventore enim ad dolorem corrupti, quae autem veniam placeat blanditiis? Quaerat, maiores odit! Rem.</p>
-              </div>
-            </div>
-            <div className="flex flex-row space-x-3">
-              <Image src="/jambengora.jpg" width={100} height={100} alt="foto layanan"/>
-              <div className="flex flex-col">
-                <h3 className="text-xl font-bold">layanan 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vel illo similique. Animi porro assumenda tempora ut saepe harum error eius nam eligendi suscipit placeat, dicta totam, et, asperiores sit!</p>
-              </div>
+      </div>
 
+      {/* Content */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 md:px-12">
+        {services.map((service, i) => (
+          <div
+            key={i}
+            className="flex items-start space-x-5 bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition"
+          >
+            <div className="w-24 h-24 relative rounded-lg overflow-hidden flex-shrink-0">
+              <Image
+                src={service.img}
+                alt={service.title}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-amber-900 mb-2">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {service.desc}
+              </p>
             </div>
           </div>
-        <div className="w-1/2 flex flex-col space-y-12">
-            <div className="flex space-x-3">
-              <Image src="/jambengora.jpg" width={100} height={100} alt="foto layanan"/>
-              <div className="flex flex-col">
-                <h3 className="text-xl font-bold">layanan 3 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id esse dolores obcaecati ipsam ut quo aliquid inventore enim ad dolorem corrupti, quae autem veniam placeat blanditiis? Quaerat, maiores odit! Rem.</p>
-              </div>
-            </div>
-            <div className="flex flex-row space-x-3">
-              <Image src="/jambengora.jpg" width={100} height={100} alt="foto layanan"/>
-              <div className="flex flex-col">
-                <h3 className="text-xl font-bold">layanan 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vel illo similique. Animi porro assumenda tempora ut saepe harum error eius nam eligendi suscipit placeat, dicta totam, et, asperiores sit!</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
+        ))}
+      </div>
     </div>
   );
 }
