@@ -50,7 +50,7 @@ export default function About() {
           <p className="text-gray-700 leading-relaxed text-justify">
             AREM hadir untuk menghadirkan kembali kehangatan dan kekayaan rasa
             minuman rempah tradisional khas Tasikmalaya. Filosofi dari nama
-            "Arem" sendiri ialah menciptakan minuman rempah yang tidak hanya
+            &#34;Arem&#34; sendiri ialah menciptakan minuman rempah yang tidak hanya
             menyegarkan tubuh, tetapi juga menghangatkan jiwa. Kami percaya
             bahwa minuman tradisional adalah warisan berharga yang harus terus
             dilestarikan dan dinikmati oleh generasi modern.

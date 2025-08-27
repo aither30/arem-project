@@ -64,7 +64,7 @@ export default function Product() {
     },
     {
       title: "Koramilk",
-      desc: "Perpaduan menu khas Arem & Arkop. Kopi Rempah aroma yang khas diseduh dengan campuran kopi Arabika yang menggoda",
+      desc: "Perpaduan menu khas 'Arem & Arkop'. Kopi Rempah aroma yang khas diseduh dengan campuran kopi Arabika yang menggoda",
       price: "Rp 15,000",
       img: "/logo.png",
     },
