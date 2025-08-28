@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/nav";
+import Navmobile from "./components/navmobile";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,8 +29,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar></Navbar>
+        <Navbar></Navbar>      
+        <Navmobile />
         {children}
+        {/* Footer */}
+      <footer className="text-center text-sm text-white py-4 bg-amber-950 border-t border-t-white">
+        <p>
+          © {new Date().getFullYear()} AREM | Bisnis Minuman Rempah Tradisional
+        </p>
+      </footer>
       </body>
     </html>
   );

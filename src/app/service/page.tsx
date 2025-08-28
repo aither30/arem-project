@@ -26,40 +26,40 @@ const services = [
 
 
   return (
-    <div className="py-8 bg-gradient-to-b from-amber-50 to-white">
+    <div className="flex flex-col py-4 md:py-8 bg-gradient-to-b from-amber-50 to-white">
       {/* Header */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-6 md:mb-12">
         <div className="flex flex-col items-center">
           <div className="w-16 h-1 bg-amber-600 mb-3"></div>
           <h2 className="text-amber-600 tracking-widest font-medium">
-            OUR SERVICE
+            LAYANAN KAMI
           </h2>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-            Fresh & Organic Beans
+          <h1 className="text-xl md:text-3xl font-extrabold text-gray-900 text-wrap">
+            Hangatkan Harimu dengan Aroma Rempah
           </h1>
         </div>
       </div>
 
       {/* Content */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 md:px-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-10 px-6 md:px-12">
         {services.map((service, i) => (
           <div
             key={i}
-            className="flex items-start space-x-5 bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition"
+            className="flex md:flex-row flex-col items-start space-x-5 bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition"
           >
-            <div className="w-24 h-24 relative rounded-lg overflow-hidden flex-shrink-0">
+            <div className="w-24 h-24 relative rounded-lg overflow-hidden flex justify-center items-center">
               <Image
                 src={service.img}
                 alt={service.title}
                 fill
-                className="object-cover"
+                className="object-cover "
               />
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-amber-900 mb-2">
+              <h3 className="md:text-xl text-sm font-semibold text-amber-900 mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-xs leading-relaxed">
                 {service.desc}
               </p>
             </div>

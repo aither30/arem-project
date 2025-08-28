@@ -89,21 +89,21 @@ export default function Product() {
   ];
 
   return (
-    <div className="py-8 bg-gradient-to-b from-amber-50 to-white">
+    <div className="flex flex-col py-4 md:py-8 bg-gradient-to-b from-amber-50 to-white">
       {/* Header */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-4 md:mb-12">
         <div className="flex flex-col items-center">
           <div className="w-16 h-1 bg-amber-600 mb-3"></div>
           <h2 className="text-amber-600 tracking-widest font-medium">PRODUK KAMI</h2>
-          <h1 className="text-5xl font-extrabold text-gray-900">
+          <h1 className="text-xl md:text-3xl font-extrabold text-gray-900">
             AROMA REMPAH
           </h1>
         </div>
       </div>
 
       {/* Content */}
-      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-2 md:p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
           {menu.map((item, i) => (
             <div key={i} className="border-b border-gray-200 last:border-none pb-4">
               <div className="flex justify-between items-start hover:bg-amber-50 rounded-lg transition p-3">
@@ -116,11 +116,11 @@ export default function Product() {
                     alt={item.title}
                   />
                   <div>
-                    <h4 className="text-lg font-semibold">{item.title}</h4>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
+                    <h4 className="text-base md:text-lg font-semibold">{item.title}</h4>
+                    <p className="text-xs md:text-sm text-gray-600">{item.desc}</p>
                   </div>
                 </div>
-                <p className="text-amber-700 font-bold whitespace-nowrap">
+                <p className="text-amber-700 text-sm md:text-base font-bold whitespace-nowrap">
                   {item.price}
                 </p>
               </div>

@@ -6,6 +6,9 @@ import Service from "./service/page";
 import Product from "./product/page";
 import Joinus from "./join/page";
 import Contact from "./contact/page";
+// import Navmobile from "./components/navmobile";
+
+
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -29,7 +32,7 @@ export default function Home() {
 
   return (
     <div>
-      {/* <Navbar></Navbar> */}
+      {/* <Navbar ></Navbar> */}
 
       {/* Hero Section */}
       <div id="home">

@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="py-8 bg-gradient-to-b from-white to-amber-50">
+    <div className="flex flex-col py-4 md:py-8 bg-gradient-to-b from-white to-amber-50">
       {/* Header */}
-      <div className="text-center mb-8">
+      <div className="text-center md:mb-8 mb-6">
         <div className="flex flex-col items-center">
           <div className="w-16 h-1 bg-amber-600 mb-3"></div>
           <h2 className="text-amber-600 tracking-widest font-medium">
@@ -17,7 +17,7 @@ export default function About() {
       </div>
 
       {/* Content */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6 md:px-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 items-center px-6 md:px-12">
         {/* Image Gallery */}
         <div className="grid grid-cols-2 grid-rows-2 gap-4 relative">
           {/* 4 Foto kecil */}
@@ -45,7 +45,7 @@ export default function About() {
         </div>
 
         {/* Text */}
-        <div className="space-y-3">
+        <div className="space-y-3 text-sm md:text-base">
           <h2 className="text-3xl font-bold text-amber-900">Profil Perusahaan</h2>
           <p className="text-gray-700 leading-relaxed text-justify">
             AREM hadir untuk menghadirkan kembali kehangatan dan kekayaan rasa
