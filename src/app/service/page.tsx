@@ -34,7 +34,7 @@ const services = [
           <h2 className="text-amber-600 tracking-widest font-medium">
             LAYANAN KAMI
           </h2>
-          <h1 className="text-xl md:text-3xl font-extrabold text-gray-900 text-wrap">
+          <h1 className="text-xl md:text-3xl font-extrabold text-gray-900 text-wrap md:px-0 px-6">
             Hangatkan Harimu dengan Aroma Rempah
           </h1>
         </div>

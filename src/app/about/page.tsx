@@ -10,7 +10,7 @@ export default function About() {
           <h2 className="text-amber-600 tracking-widest font-medium">
             TENTANG KAMI
           </h2>
-          <h1 className="text-xl md:text-3xl font-extrabold text-gray-900">
+          <h1 className="text-xl md:text-3xl font-extrabold text-gray-900 md:px-0 px-6">
             Hangatkan Harimu dengan Aroma Rempah
           </h1>
         </div>

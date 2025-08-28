@@ -32,7 +32,7 @@ export default function Joinus() {
           <h2 className="text-amber-600 tracking-widest font-medium">
             KEMITRAAN
           </h2>
-          <h1 className="text-xl md:text-3xl font-extrabold text-gray-900 text-wrap md:px-0 px-6">
+          <h1 className="text-xl md:text-3xl font-extrabold text-gray-900 text-wrap md:px-0 px-10">
             Bergabunglah Menjadi Mitra ✨ AREM ✨
           </h1>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto md:text-base text-sm">

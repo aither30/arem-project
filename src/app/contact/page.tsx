@@ -96,16 +96,16 @@ export default function Contact() {
       </div>
 
       {/* Contact Form Section */}
-      <div className="w-full md:w-1/2 bg-amber-900/30 rounded-xl p-6 flex flex-col justify-center items-center">
+      <div className="w-full md:w-1/2 bg-amber-900/30 rounded-xl p-6 flex flex-col justify-center items-center text-center">
         <h2 className="text-3xl font-extrabold mb-6 flex gap-3">
           <User size={28} /> Hubungi Kami
         </h2>
 
-        <p className="text-lg text-amber-400 mb-4 ">
+        <p className="text-lg  text-amber-400 mb-4 ">
           “Hangatkan Harimu dengan Aroma Rempah”
         </p>
 
-        <div className="flex flex-col md:flex-row gap-6 mb-4 text-gray-300">
+        <div className="flex flex-col md:flex-row gap-6 mb-4 text-gray-300 text-center justify-center items-center">
           <p className="flex items-center gap-2">
             <Mail size={20} className="text-amber-400" />{" "}
             arem.gejrotenak123@gmail.com
