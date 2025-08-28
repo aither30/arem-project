@@ -34,16 +34,13 @@ export default function Home() {
     <div>
       {/* <Navbar ></Navbar> */}
 
-      {/* Hero Section */}
       <div id="home">
         <div
           className="bg-cover bg-center relative h-[75dvh] flex justify-center items-center transition-all duration-1000"
           style={{ backgroundImage: `url('${images[current]}')` }}
         >
-          {/* Overlay */}
           <div className="absolute inset-0 bg-amber-950/70"></div>
 
-          {/* Konten */}
           <div className="relative z-10 text-lg font-bold p-2 text-white flex flex-col justify-center items-center space-y-1">
             <h1 className="text-amber-600">We Have Been Serving</h1>
             <h1 className="text-5xl">AREM</h1>
@@ -52,7 +49,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Other Sections */}
       <div>
         <About />
       </div>

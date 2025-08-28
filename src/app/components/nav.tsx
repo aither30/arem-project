@@ -9,12 +9,12 @@ export default function Navbar() {
     {
       name: "Instagram",
       icon: <FaInstagram />,
-      href: "https://www.instagram.com/appleaither?igsh=cGpiaHQ4aHdxZnVo",
+      href: "https://www.instagram.com/arem.aromagroup.official",
     },
     {
       name: "Facebook",
       icon: <FaFacebook />,
-      href: "www.facebook.com",
+      href: "https://www.facebook.com/arem.aromagroup.official",
     },
     // {
     //   name: "LinkedIn",
