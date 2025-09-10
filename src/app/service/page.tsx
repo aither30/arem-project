@@ -35,7 +35,7 @@ const services = [
             LAYANAN KAMI
           </h2>
           <h1 className="text-xl md:text-3xl font-extrabold text-gray-900 text-wrap md:px-0 px-6">
-            Hangatkan Harimu dengan Aroma Rempah
+            Minuman Rempah Tradisional Ala' Tasik
           </h1>
         </div>
       </div>

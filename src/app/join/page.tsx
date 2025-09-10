@@ -7,13 +7,13 @@ export default function Joinus() {
       name: "Paket Gerobakan",
       price: "Mulai Rp 8.000.000",
       benefit: "Keuntungan 100% dari mark up / selisih harga",
-      img: "/logo.jpg",
+      img: "/paketgerobak.png",
     },
     {
       name: "Paket Tongkrongan",
       price: "Mulai Rp 100.000.000",
       benefit: "Keuntungan 55% dari laba bersih",
-      img: "/logo.jpg",
+      img: "/pakettongkrongan.jpg",
     },
     // {
     //   name: "Paket Titipan",
@@ -86,7 +86,7 @@ export default function Joinus() {
       {/* Satu Tombol Join */}
       <div className="text-center">
         <Link
-          href="https://forms.gle/xxxxxx" // ganti dengan link Google Form asli
+          href="https://forms.gle/xxxxxx" 
           target="_blank"
           rel="noopener noreferrer"
         >

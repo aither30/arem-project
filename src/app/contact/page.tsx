@@ -102,7 +102,7 @@ export default function Contact() {
         </h2>
 
         <p className="text-lg  text-amber-400 mb-4 ">
-          “Hangatkan Harimu dengan Aroma Rempah”
+          “Minuman Rempah Tradisional Ala' Tasik”
         </p>
 
         <div className="flex flex-col md:flex-row gap-6 mb-4 text-gray-300 text-center justify-center items-center">
