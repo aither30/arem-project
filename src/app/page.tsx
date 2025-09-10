@@ -44,7 +44,7 @@ export default function Home() {
           <div className="relative z-10 text-lg font-bold p-2 text-white flex flex-col justify-center items-center space-y-1">
             <h1 className="text-amber-600">Wilujeng Sumping</h1>
             <h1 className="text-5xl">AREM</h1>
-            <h1>Minuman Rempah Tradisional Ala' Tasik</h1>
+            <h1>Minuman Rempah Tradisional Ala&apos; Tasik</h1>
           </div>
         </div>
       </div>
