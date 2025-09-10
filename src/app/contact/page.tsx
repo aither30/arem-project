@@ -45,6 +45,11 @@ export default function Contact() {
       address:
         "Jl. Muktamar NU. XXIX, Cipakat, Kec. Singaparna, Kabupaten Tasikmalaya, Jawa Barat 46417",
     },
+    {
+      name: "Arem Barcode",
+      address:
+        "Jl. Mayor Utarya No.48, Empangsari, Kec. Tawang, Kab. Tasikmalaya Jawa Barat 46113, Indonesia",
+    },
   ];
 
   const [message, setMessage] = useState("");
